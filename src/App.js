@@ -1,13 +1,16 @@
 import "./App.css";
+import {Routes, Route} from 'react-router-dom'
 // import Slider from './Components/Slider/Slider'
 import travel_02 from "./assets/travel-02.jpg";
 import travel_03 from "./assets/travel-03.jpg";
 import { Slider } from "./Components/Scroll/Slider";
 import Text from "./Components/Main/Text";
-import { Other } from "./Components/Other/Other";
 import { TextData } from "./Components/TextData/TextData";
 import { Myname } from "./Components/Myname/Myname";
 import { Gradientss } from "./Components/Gradientss/Gradientss";
+import Main from "./Components/Main/Main";
+import { PageNotFound } from "./Components/PageNotFound/PageNotFound";
+import { OverviewHistory } from "./Components/OverviewHistory/OverviewHistory";
 
 const StoneAge = () => {
   return (
@@ -283,10 +286,12 @@ function App() {
     "Our platform offers a wide variety of unique travel locations!",
   ];
   return (
-    <>
+    <Routes>
       {/* <Slider /> */}
-      <Text />
-      <Slider imageSrc={travel_02} title={"Stone Age"} subtitle={subtitle} />
+      <Route path="/" element={<Main />} />
+      <Route path="/overview-history" element={<OverviewHistory />} />
+      <Route path="*" element={<PageNotFound />} />
+      {/* <Slider imageSrc={travel_02} title={"Stone Age"} subtitle={subtitle} />
       <StoneAge />
       <Slider
         imageSrc={travel_03}
@@ -298,8 +303,8 @@ function App() {
       <Other />
       <TextData />
       <Myname />
-      <Gradientss />
-    </>
+      <Gradientss /> */}
+    </Routes>
   );
 }
 

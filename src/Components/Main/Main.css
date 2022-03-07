@@ -1,0 +1,56 @@
+.shadow {
+  font-family: Mr Dafoe, sans-serif;
+  font-size: 16em;
+  text-align: center;
+  text-shadow: 0 -3px 0 #333, 0 6px 8px rgba(0, 0, 0, 0.4),
+    0 9px 10px rgba(0, 0, 0, 0.15), 0 30px 10px rgba(0, 0, 0, 0.18),
+    0 15px 10px rgba(0, 0, 0, 0.21);
+}
+
+.sub-main {
+  width: 30%;
+  margin: 22px;
+  float: left;
+}
+
+button{
+    border: none;
+}
+
+.button-two {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 0 0 100px;
+  border-radius: 10px;
+  background-color: #d35400;
+  width: 300px;
+  transition: all 0.5s;
+}
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}

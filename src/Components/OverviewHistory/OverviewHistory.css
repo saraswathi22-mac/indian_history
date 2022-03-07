@@ -1,8 +1,3 @@
-/* 
-  Based from this article from Divya Manian - 
-  http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -23,12 +18,16 @@ body {
 
 body {
     font-family: 'Oswald', sans-serif;
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    /* background-color: #000; */
 }
 
 .wrapper {
     text-align: center;
+}
+
+.wrapper div {
+    cursor: pointer;
 }
 
 .title {
@@ -47,12 +46,12 @@ body {
     height: 4px;
     margin-left: -120px;
     content: '';
-    background-color: #fff;
+    background-color: black;
 }
 
 /* Clip text element */
 .clip-text {
-    font-size: 6em;
+    font-size: 36px;
     font-weight: bold;
     line-height: 1;
     position: relative;
@@ -62,8 +61,7 @@ body {
     text-align: center;
     /* Color fallback */
     color: #fff;
-    -webkit-background-clip: text;
-
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -94,7 +92,6 @@ body {
     background-color: #000;
 }
 
-/* Change the background position to display letter when the black zone isn't here */
 .clip-text--no-textzone:before {
     background-position: -.75em 0;
 }
@@ -103,7 +100,6 @@ body {
     content: none;
 }
 
-/* Use Background-size cover for photo background and no-repeat background */
 .clip-text--cover,
 .clip-text--cover:before {
     background-repeat: no-repeat;
@@ -112,64 +108,19 @@ body {
   background-position: 50% 50%;
 }
 
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
-.clip-text_one {
-    background-image: url(https://picsum.photos/480/200?random);
-}
-
-.clip-text_two {
-    background-image: url(https://picsum.photos/480/200?grayscale);
-}
-
-.clip-text_tree {
-    background-image: url(https://picsum.photos/480/200?grayscale&random=2);
-}
-
-.clip-text_four {
-    background-image: url(https://picsum.photos/480/200?grayscale&blur=3);
-}
-
-.clip-text_five {
-    background-image: url(https://picsum.photos/480/200?grayscale);
-}
-
-.clip-text_six {
-    background-image: url(https://picsum.photos/480/200?random=3);
-}
-
 .clip-text_seven {
-    background-image: url(https://picsum.photos/480/200?random=4);
+    background-image: url('../../assets/ancient-history.jpg');
 }
 
 .clip-text_eight {
-    background-image: url(https://picsum.photos/480/200?random=6);
+    background-image: url('../../assets/medieval-history.jpg');
 }
 
 .clip-text_nine {
-    background-image: url(https://picsum.photos/480/200?random=5);
-}
-
-.clip-text_ten {
-    background-image: url(https://picsum.photos/480/200?random=7);
+    background-image: url('../../assets//modern-history.jpg');
 }
 
 .clip-text_eleven {
     background-image: url(https://picsum.photos/480/200?random=8);
     background-size: cover;
-}
-
-.clip-text_twelve {
-    background-image: url(https://picsum.photos/480/200?random=9);
-}
-
-.clip-text_thirteen {
-    background-image: url(https://picsum.photos/480/200?random=10);
-}
-
-.clip-text_fourteen {
-    background-image: url(https://picsum.photos/480/200?random=11);
-}
-
-.clip-text_fifteen {
-    background-image: url(https://picsum.photos/480/200?random=12);
 }

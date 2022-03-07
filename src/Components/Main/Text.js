@@ -3,9 +3,8 @@ import "./Text.css";
 const Text = () => {
   return (
     <>
-      <div class="shadow">Style</div>
-      <div class="container-text">Nature</div>
-      <div class="hello-parent">
+      {/* <div class="container-text">Nature</div> */}
+      {/* <div class="hello-parent">
         <svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
           <g id="H-letter">
             <line
@@ -163,7 +162,7 @@ const Text = () => {
             />
           </g>
         </svg>
-      </div>
+      </div> */}
     </>
   );
 };
