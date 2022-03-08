@@ -23,11 +23,9 @@ function App() {
       {/* <Slider /> */}
       <Route path="/" element={<Main />} />
       <Route path="/overview-history" element={<OverviewHistory />} />
-      <Route path="/ancient-history" element={<AncientHistory />}>
-        <Route path="sources" element={<Sources />} />
-        <Route path="stone-age" element={<StoneAge />} />
-
-      </Route>
+      <Route path="/ancient-history" element={<AncientHistory />} />
+      <Route path="/ancient-history/sources" element={<Sources />} />
+      <Route path="/ancient-history/stone-age" element={<StoneAge />} />
       <Route path="/medieval-history" element={<div>Medieval</div>} />
       <Route path="/history" element={<div>History</div>} />
       <Route path="/modern-history" element={<div>Modern</div>} />
