@@ -78,3 +78,10 @@
   text-align: center;
   font-family: "MonteCarlo", cursive;
 }
+
+.ancient-container {
+  margin: 0;
+  padding: 0 4em 2em 4em;
+  font-family: 'Playball', cursive;
+  font-size: 2em;
+}

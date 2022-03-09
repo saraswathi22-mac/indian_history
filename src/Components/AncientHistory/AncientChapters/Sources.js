@@ -2,7 +2,7 @@ export const Sources = () => {
   return (
     <>
       <div className="ancient-title">Sources of Ancient India</div>
-      <div>
+      <div className="ancient-container">
         <h2>1. Scriptures</h2>
         <h2>2. Historical Texts</h2>
         <h2>3. Details of foreigners</h2>
@@ -14,7 +14,7 @@ export const Sources = () => {
         </h4>
         <h4>4 vedas</h4>
         <h5>1. Rigveda: Ayurveda</h5>
-        <p>
+        
           This is the most ancient Veda. It has 10 mandals, 1028 suktas, 10462
           verses. The sage who recites the rithas of this veda is called Hotru.
           The 3rd mandala of this veda composed by Vishvamitra contains the
@@ -22,20 +22,20 @@ export const Sources = () => {
           mentions the deity SOm. The source of imagination of the Chatushvarnya
           society is the Purushasukta described in the 10th mandal. It has
           composed of 250 hymns for Indra and 200 for Agni.
-        </p>
+        
         <h5>2. YajurVeda: dhanur </h5>
-        <p>
+        
           The compilation of mantras for recitation and rules for compliance at
           the time of sacrifice is called Yajurveda. The reader of this veda is
           called Adhvaryu. This veda is both in prose and verse.{" "}
-        </p>
+        
         <h5>Samveda: gandarv veda</h5>
-        <p>
+        
           The collection of verses that can be sung is called Samveda. its
           reader is called Udratri. It is called the father of Indian music
-        </p>
+        
         <h5>Atharveda/Bushan veda: shilp veda</h5>
-        <p>
+        
           This veda was composed by the Atharva sage. In this veda, there is
           description of mantra related to various topicslike disease,
           prevention, tantra-mantra, witchcraft, curse, vashikaran, blessing,
@@ -43,10 +43,10 @@ export const Sources = () => {
           thought, beliefs, superstitions etc of ordinary human beings. In this
           the assembly and the committee have been called two daughters of
           prajapati. Sub ved of this is Shilp veda
-        </p>
+        
 
         <h4>Puranas</h4>
-        <p>
+        
           It provides the best serialized descriptions of Indian historical
           stories. The auther of this is considered Lomharsha or his son
           Ugarshrawa. Their no is 18 out of which only 5 puranas: Matsya, Vayu,
@@ -54,17 +54,17 @@ export const Sources = () => {
           Matsya puran is the most ancient and authentic. Vishnu puran belongs
           to maurya dynasty. Matsy belongs to Andhra Satavahana dynasty. Vayu to
           gupta dynasty
-        </p>
+        
 
         <h4>Smritigranth</h4>
-        <p>
+        
           1. Manusmriti: Most ancient and authentic manusmriti is considered in
           the epics. This is the standard text of sunga period. 2. Narada
           smriti: Provides info abt Gupta era.
-        </p>
+        
 
         <h5>Epics</h5>
-        <p>
+        
           1. Ramayan: Creater is valmiki rishi. 1&2nd century of creation time.
           There are 12000 verses initially in Ramayan and abt 24000 at present.
           Valimik ramayan is divided into 7 sections-balkand, ayodhya kand,
@@ -72,14 +72,13 @@ export const Sources = () => {
           social, political and religious location of the tine is revealed in
           Ramayan. The texts based on Ramkatha were first translated out of
           India into China. Bhushundi ramayan is known as adi ramayan
-        </p>
-        <p>
+      
           2. Mahabharata: createe maharshi ved vyas. Initially it was 24000
           verses. currently there are abt 1L verses. Mahabharat is also called
           as Jai samhita. Maha is divided into 18 festivals. The social,
           political and religious location of the tine is revealed in
           Mahabharata
-        </p>
+       
 
         <h4>
           Bhuddism: The tripatak , compiled in the musicals held after the
